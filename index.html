@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biker Zone</title>
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Tailwind and DaisyUI CDN Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="poppins">
+    <header class="md:container md:mx-auto">
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="navbar bg-base-100 shadow-sm">
+          <div class="flex-1">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 text-base shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl lg:text-4xl">Biker Zone</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal text-base px-1">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <a class="btn btn-error text-base text-white">Login</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Slider or Carousel goes here -->
+      <div class="carousel lg:h-[550px] w-full bg-[rgba(231,111,81,0.1)]">
+        <!-- Slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div
+            class="flex-col lg:flex-row flex items-center justify-between py-5 px-5 lg:px-20"
+          >
+            <div class="space-y-7 flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride on R15 V4
+                <br />
+                Feel the thrill
+              </h2>
+              <p>
+                Experience the ultimate ride with the Yamaha R15 V4. Unleash
+                power, precision, and style on every journey.
+              </p>
+              <button class="btn btn-error text-white">Shop Now</button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike1.png" class="w-[400px]" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <div
+            class="flex-col lg:flex-row flex items-center justify-between py-5 px-5 lg:px-20"
+          >
+            <div class="space-y-7 flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride Cafe Racer
+                <br />
+                Feel the power
+              </h2>
+              <p>
+                Embrace the spirit of the open road with our latest Cafe Racer.
+                Combining vintage aesthetics for an unforgettable ride.
+              </p>
+              <button class="btn btn-error text-white">Shop Now</button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike2.png" class="w-[400px]" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <div
+            class="flex-col lg:flex-row flex items-center justify-between py-5 px-5 lg:px-20"
+          >
+            <div class="space-y-7 flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride Super Sport
+                <br />
+                Feel the Speed
+              </h2>
+              <p>
+                Experience the thrill of the new Super Sport motorcycle. With
+                cutting-edge design, it's time to elevate your ride.
+              </p>
+              <button class="btn btn-error text-white">Shop Now</button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike3.png" class="w-[400px]" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <div
+            class="flex-col lg:flex-row flex items-center justify-between py-5 px-5 lg:px-20"
+          >
+            <div class="space-y-7 flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride on E-Cruiser
+                <br />
+                Feel the future
+              </h2>
+              <p>
+                Discover the all-new electric cruiser that redefines riding.
+                Embrace eco-friendly power without compromising on performance.
+              </p>
+              <button class="btn btn-error text-white">Shop Now</button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike4.png" class="w-[400px]" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="md:container md:mx-auto">
+      <!-- Featured Bike Section -->
+      <section class="my-15">
+        <div>
+          <h3 class="text-3xl lg:text-5xl font-semibold text-center">Featured Bikes In This Year</h3>
+          <p class="text-[#ff637d] text-center font-semibold text-sm">Best Bike Collection</p>
+          <hr class="w-24 border border-[#ff637d] mx-auto mt-1" />
+        </div>
+        <!-- Featured bike cards go here -->
+        <div class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5 px-5 lg:px-0">
+          <img class="grayscale" src="images/others/feature-bike.png" alt="">
+          <img src="images/others/feature-bike.png" alt="">
+          <img class="grayscale" src="images/others/feature-bike.png" alt="">
+        </div>
+      </section>
+      <!-- Latest News Section -->
+      <section class="my-15">
+        <h3 class="text-3xl lg:text-5xl font-semibold text-center">Latest News</h3>
+        <!-- News cards go here -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 px-5 lg:px-0"
+        >
+          <!-- First Card -->
+          <div class="card bg-base-100 shadow-sm pt-5 pb-0">
+            <figure>
+              <img src="images/others/latest1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl">Ducati XDIAVEL S-73</h2>
+              <p>
+                Experience the thrill of the Ducati XDIAVEL S-73, a perfect
+                blend of power and style. With its aggressive design and
+                cutting-edge technology, this bike is built for those who crave
+                excitement on the road.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-error text-white">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="card bg-base-100 shadow-sm pt-5 pb-0">
+            <figure>
+              <img src="images/others/latest2.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl">Motorcycles & Scooters</h2>
+              <p>
+                Discover the latest trends in motorcycles and scooters. From
+                sleek designs to powerful engines, explore a wide range of
+                options that cater to every rider's style and preference.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-error text-white">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div class="card bg-base-100 shadow-sm pt-5 pb-0">
+            <figure>
+              <img src="images/others/latest3.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl">2021 Honda CBR500R</h2>
+              <p>
+                The 2021 Honda CBR500R is a sportbike that combines performance
+                and comfort. With its powerful engine and aerodynamic design,
+                it's perfect for both city rides and weekend adventures.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-error text-white">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Happy Clients Section -->
+      <section class="my-15">
+        <h3 class=" text-3xl lg:text-5xl font-semibold text-center">
+          Happy <span class="text-[#ff637d]">Client Says</span>
+        </h3>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 px-5 lg:px-0"
+        >
+          <!-- First Review Card -->
+          <div class="card bg-base-100 p-9 border border-[#DEDEDE]">
+            <figure>
+              <img class="w-36" src="images/others/user-1.png" alt="user-1" />
+            </figure>
+            <div class="card-body text-center p-0 mt-4">
+              <p>
+                "Biker Zone provided me with an exceptional motorcycle buying
+                experience. The staff was knowledgeable and helped me find the
+                perfect bike that suited my needs. Highly recommended!"
+              </p>
+              <div class="rating justify-center">
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="1 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="2 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="3 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="4 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="5 star"
+                />
+              </div>
+              <div class="card-actions flex-col items-center">
+                <h4 class="text-sm font-semibold text-info">Miles Morales</h4>
+                <p>Banker</p>
+              </div>
+            </div>
+          </div>
+          <!-- Second Review Card  -->
+          <div class="card bg-base-100 p-9 border border-[#DEDEDE]">
+            <figure>
+              <img class="w-36" src="images/others/user-2.png" alt="user-1" />
+            </figure>
+            <div class="card-body text-center p-0 mt-4">
+              <p>
+                "Biker Zone offers an amazing selection of bikes and
+                accessories. The team was friendly and provided excellent
+                guidance. I found exactly what I was looking for!"
+              </p>
+              <div class="rating justify-center">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="1 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="2 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="3 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="4 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="5 star"
+                />
+              </div>
+              <div class="card-actions flex-col items-center">
+                <h4 class="text-sm font-semibold text-info">Miles Morales</h4>
+                <p>Banker</p>
+              </div>
+            </div>
+          </div>
+          <!-- Third Review Card  -->
+          <div class="card bg-base-100 p-9 border border-[#DEDEDE]">
+            <figure>
+              <img class="w-36" src="images/others/user-3.png" alt="user-1" />
+            </figure>
+            <div class="card-body text-center p-0 mt-4">
+              <p>
+                "I had a fantastic experience at Biker Zone. The staff was
+                attentive and helped me choose the right bike for my needs. The
+                quality of their products is top-notch!"
+              </p>
+              <div class="rating justify-center">
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="1 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="2 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="3 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="4 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 bg-orange-400"
+                  aria-label="5 star"
+                />
+              </div>
+              <div class="card-actions flex-col items-center">
+                <h4 class="text-sm font-semibold text-info">Miles Morales</h4>
+                <p>Banker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Section -->
+      <section class="my-15 p-4 lg:p-0">
+        <h3 class="text-3xl lg:text-5xl font-semibold text-center">
+          Frequently Asked <span class="text-[#ff637d]">Questions</span>
+          <div class="hero">
+            <div class="hero-content flex-col lg:flex-row lg:gap-20">
+              <img
+                src="images/others/faq.png"
+                class=" w-3/4 md:max-h-80 md:max-w-80 lg:max-w-sm rounded-lg shadow-2xl"
+              />
+              <div class="space-y-4">
+                <div
+                  class="collapse collapse-arrow bg-base-100 border border-base-300"
+                >
+                  <input type="radio" name="my-accordion-2"/>
+                  <div class="collapse-title text-xl font-medium">
+                    What are the most important to know about
+                    riding a bike?
+                  </div>
+                  <div
+                    class="collapse-content font-normal text-base text-[#7E848C]"
+                  >
+                    Safety First! Always obey the rules of the road. Obey all
+                    traffic signals, signs, and laws. Get in the mindset of
+                    “driving” your bike—not just “riding” your bike. This will
+                    help you be a more focused and legally compliant bike rider.
+                  </div>
+                </div>
+                <div
+                  class="collapse collapse-arrow bg-base-100 border border-base-300"
+                >
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">
+                    How can I tell if my helmet is old and I need a new one?
+                  </div>
+                  <div
+                    class="collapse-content font-normal text-base text-[#7E848C]"
+                  >
+                    Helmets should be replaced every five years, or immediately
+                    after a crash. Check the manufacturer's date label inside
+                    your helmet to determine its age.
+                  </div>
+                </div>
+                <div
+                  class="collapse collapse-arrow bg-base-100 border border-base-300"
+                >
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">
+                    My bike has been in storage is it safe to ride?
+                  </div>
+                  <div
+                    class="collapse-content font-normal text-base text-[#7E848C]"
+                  >
+                    Before riding a bike that has been in storage, check the
+                    tires for proper inflation, inspect the brakes, and ensure
+                    that all fluids (oil, coolant, brake fluid) are at the
+                    correct levels. It's also a good idea to test ride the bike
+                    in a safe area to ensure everything is functioning properly.
+                  </div>
+                </div>
+                <div
+                  class="collapse collapse-arrow bg-base-100 border border-base-300"
+                >
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">
+                    What rules should I follow when riding my bike?
+                  </div>
+                  <div
+                    class="collapse-content font-normal text-base text-[#7E848C]"
+                  >
+                    Always wear a helmet and protective gear. Follow traffic
+                    laws and signals. Stay visible to other drivers by using
+                    lights and reflective clothing. Maintain a safe distance
+                    from other vehicles and be cautious at intersections.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </h3>
+      </section>
+    </main>
+
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+      <aside>
+        <p>
+          &copy; 1992-2024 Biker Zone
+          <br />
+          All rights reserved.
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Get the App</h6>
+        <div class="grid grid-cols-1 gap-4">
+          <a><img class="w-36" src="images/others/android.png" alt=""></a>
+          <a><img class="w-36" src="images/others/ios.png" alt=""></a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
