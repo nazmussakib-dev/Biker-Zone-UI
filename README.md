@@ -78,6 +78,4 @@ Jagannath University, Dhaka
 * DaisyUI
 * Programming Hero (UI inspiration)
 
-```
-
 ---
